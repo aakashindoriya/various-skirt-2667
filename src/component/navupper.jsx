@@ -5,7 +5,7 @@ function NavUp(){
 
         return(
             <div>
-                <Flex boxSizing='borderBox' justifyContent="space-evenly" >
+                <Flex boxSizing='borderBox' justifyContent="space-evenly" h={70} margin="1%">
                 <Box boxSize='sm' alignItems={"center"}>
                    <Image src='https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png' alt='Dan Abramov' h="50px" />
                 </Box>
