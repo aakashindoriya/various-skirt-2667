@@ -1,0 +1,87 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "email": "adfdsfa@sdfa",
+      "password": "fdsfdfs",
+      "name": "aajdsjd",
+      "id": 1
+    },
+    {
+      "email": "adfdsfa@sdfa",
+      "password": "fdsfdfs",
+      "name": "aajdsjd",
+      "id": 2
+    },
+    {
+      "email": "rathor@1dwsd",
+      "password": "madad",
+      "name": "rowdy",
+      "id": 3
+    },
+    {
+      "email": "",
+      "password": "",
+      "name": "",
+      "id": 4
+    },
+    {
+      "email": "",
+      "password": "",
+      "name": "aaksh",
+      "id": 5
+    },
+    {
+      "email": "aakash@123",
+      "password": "aakash@123",
+      "name": "aakash@123",
+      "id": 6
+    },
+    {
+      "email": "aaksh@321",
+      "password": "aaksh@321",
+      "name": "aaksh@321",
+      "id": 7
+    },
+    {
+      "email": "aakash@12",
+      "password": "aakash@123",
+      "name": "aakash@123",
+      "id": 8
+    },
+    {
+      "email": "aakash111",
+      "password": "aakash111",
+      "name": "aakash111",
+      "id": 9
+    },
+    {
+      "email": "aakash111",
+      "password": "aakash111",
+      "name": "aakash111",
+      "id": 10
+    },
+    {
+      "email": "aakash111",
+      "password": "aakash111",
+      "name": "aakash111",
+      "id": 11
+    }
+  ]
+}

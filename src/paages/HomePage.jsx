@@ -10,7 +10,6 @@ function HomePage(){
             setData(res.data)
         })
     },[])
-    console.log(data)
     return(
         <Box>
             <Flex>
