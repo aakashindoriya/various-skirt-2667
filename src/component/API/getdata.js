@@ -1,5 +1,11 @@
 import axios from "axios";
 
 export function GetData(){
-   return axios.get("https://fakestoreapi.com/products?limit=40")
+   return axios.get("https://fakestoreapi.com/products")
+}
+export function Setuser(data){
+   return axios.post("http://localhost:3000/users",data)
+}
+export function Loginuser(){
+   return axios.get("http://localhost:3000/users")
 }

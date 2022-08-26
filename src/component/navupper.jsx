@@ -1,6 +1,9 @@
-import { Flex, Spacer,Image,Box,Input,  Select, Button,  Icon,Text } from '@chakra-ui/react'
+import { Flex, Spacer,Image,Box,Input,  Select, Button,  Icon,Text, Link } from '@chakra-ui/react'
 import {Search2Icon } from '@chakra-ui/icons'
 import { TiShoppingCart,TiUserAdd,TiHeartHalfOutline } from "react-icons/ti"
+import InitialFocus from './SingnupLogin'
+import { useState } from 'react'
+import Cart from './cartpage'
 function NavUp(){
 
         return(
@@ -22,20 +25,16 @@ function NavUp(){
                 </Box>
                <Box  w={"30%"}>
                <Flex  justifyContent="space-evenly">
-                    <Flex alignItems={"center"}>
-                      <Icon as={TiUserAdd} w={10} h={10}></Icon>
-                      <Text>Sign in</Text>
-                      </Flex>
+                   
+                   < InitialFocus></InitialFocus>
                       <Spacer />
                       <Flex alignItems={"center"}>
                       <Icon as={TiHeartHalfOutline} w={10} h={10}></Icon>
                       <Text>Sign in</Text>
                       </Flex >
+                     
                       <Spacer />
-                      <Flex alignItems={"center"}>
-                      <Icon as={TiShoppingCart} w={10} h={10}></Icon>
-                      <Text>Sign in</Text>
-                      </Flex>
+                      <Cart></Cart>
                 </Flex>
                </Box>
                 </Flex>
