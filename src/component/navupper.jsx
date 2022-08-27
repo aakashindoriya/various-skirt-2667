@@ -2,7 +2,7 @@ import { Flex, Spacer,Image,Box,Input,  Select, Button,  Icon,Text, Link } from 
 import {Search2Icon } from '@chakra-ui/icons'
 import { TiShoppingCart,TiUserAdd,TiHeartHalfOutline } from "react-icons/ti"
 import InitialFocus from './SingnupLogin'
-import { useState } from 'react'
+
 import Cart from './cartpage'
 function NavUp(){
 
