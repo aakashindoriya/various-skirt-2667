@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Icon, Image, Popover, Text } from "@chakra-ui/react";
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, Button, Flex, Grid, Icon, Image, Popover, Text, Tooltip } from "@chakra-ui/react";
 import { useContext } from "react";
 import { TiWorld,TiShoppingCart } from "react-icons/ti";
 import { Authcontext } from "../Authcontext/appcontext";
@@ -12,7 +12,7 @@ function HomeProducts({data}){
           
         }
         else{
-            alert("item added in the cart")
+         alert("product is in your cart")
         }
         
         
@@ -35,11 +35,15 @@ function HomeProducts({data}){
                                 <Icon as={TiWorld} w={6} h={6}></Icon>
                                 
                                 <Text>Aakash Store</Text>
-                                <Icon as={TiShoppingCart} w={6} h={6} onClick={(e)=>{
+                               
+                                <Tooltip label='Add to cart' fontSize='md'>
+                                    <Button>
+                                    <Icon as={TiShoppingCart} w={6} h={6} onClick={()=>{
                                     handleCart(el)
-                                    console.log(this)
+                                    
                                 }}></Icon>
-                                
+                                    </Button>
+                                </Tooltip>
                                 </Flex>
                             </Box>
                         </Box>

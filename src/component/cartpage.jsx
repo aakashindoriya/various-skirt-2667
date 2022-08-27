@@ -11,22 +11,24 @@ import {
     Flex,
     Icon,
     Text,
-    useConst,
+   
   } from '@chakra-ui/react'
+import { useContext } from 'react'
 
 import { TiShoppingCart } from 'react-icons/ti'
+import { useNavigate } from 'react-router-dom'
 import { Authcontext } from '../Authcontext/appcontext'
+import Cartbox from './cartBox'
 function Cart() {
     
     const { isOpen, onOpen, onClose } = useDisclosure()
-  let {state,dispatch}=useConst(Authcontext)
-  console.log(state)
-  
+    const {state} =useContext(Authcontext)
+    let navigate=useNavigate()
     return (
       <>
         <Flex alignItems={"center"} onClick={onOpen}>
                       <Icon as={TiShoppingCart} w={10} h={10}></Icon>
-                      <Text>Sign in</Text>
+                      <Text>Cart</Text>
                       </Flex>
       
         <Drawer
@@ -38,20 +40,18 @@ function Cart() {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+            <DrawerHeader>CART {state.token}</DrawerHeader>
   
             <DrawerBody>
-             
-              {/* {state.cart.map((el)=>{
-               return (<Button>{el.title}</Button>)
-              })} */}
+             <Cartbox data={state.cart}></Cartbox>
+              
             </DrawerBody>
   
             <DrawerFooter>
-              <Button variant='outline' mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme='blue'>Save</Button>
+              
+              <Button colorScheme='blue' w={"90%"} margin="auto" onClick={()=>{
+               navigate("/payment")
+              }}>Buy Now</Button>
             </DrawerFooter>
           </DrawerContent>
         </Drawer>

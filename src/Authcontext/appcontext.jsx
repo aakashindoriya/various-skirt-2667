@@ -9,7 +9,8 @@ let initialState={
     token:null,
     signup:true,
     cart:[],
-    favorate:[]
+    favorate:[],
+    cartTotal:null
 
 }
 function reducer(state,action){
@@ -25,6 +26,12 @@ function reducer(state,action){
         }
         case "addtocart":return{
             ...state,cart:[...state.cart,action.paylode]
+        }
+        case "cartTotal":return{
+            ...state,cartTotal:action.paylode
+        }
+        case "cartDelete":return{
+            ...state,cart:action.paylode
         }
         default :return state
     }
