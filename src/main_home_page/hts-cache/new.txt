@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+15:57:48	233925/233925	---MCZ	200	added ('OK')	text/html	etag:W/%228ee8642092dd39d3c38c076cbe0cf946%22	https://www.gearbest.com/	C:/My%20Web%20Sites/gearbest_clone/main_home_page/main_home-page/index-2.html	(from )
+15:57:49	769/769	---MCZ	200	added ('OK')	text/plain	date:Thu,%2025%20Aug%202022%2010:27:56%20GMT	https://www.gearbest.com/robots.txt		(from )
