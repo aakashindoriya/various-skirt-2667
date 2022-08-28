@@ -4,7 +4,7 @@ import { createContext } from "react";
 
 export let Authcontext=createContext()
 let initialState={
-    isAuth:true,
+    isAuth:false,
     isloding:false,
     productData:[],
     token:null,
