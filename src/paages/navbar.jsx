@@ -5,8 +5,8 @@ import NavUp from "../component/navupper"
 function Navbar(){
 return(
   <>
-  <Box boxShadow={"0px 1px 0px 0px"} position={"sticky" } top={"0px"} bg={"white"}>
   <NavUp></NavUp>
+  <Box boxShadow={"0px 1px 0px 0px"} position={"sticky" } top={"0px"} background={"white"} opacity={"100%"}>
   <NavBottom></NavBottom>
   </Box>
   </>

@@ -28,7 +28,13 @@ function Cart() {
       <>
         <Flex alignItems={"center"} onClick={onOpen}>
                       <Icon as={TiShoppingCart} w={10} h={10}></Icon>
-                      <Text>Cart</Text>
+                      <Icon viewBox='0 0 200 200' color={state.cart.length===0?"red":"yellow"} position={"absolute"}>
+                        <path
+                          fill='currentColor'
+                          d='M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0'
+                        />
+                      </Icon>
+                      <Text>Cart({state.cart.length})</Text>
                       </Flex>
       
         <Drawer

@@ -1,9 +1,10 @@
+import { TriangleUpIcon } from "@chakra-ui/icons";
 import { useReducer } from "react";
 import { createContext } from "react";
 
 export let Authcontext=createContext()
 let initialState={
-    isAuth:false,
+    isAuth:true,
     isloding:false,
     productData:[],
     token:null,
@@ -32,6 +33,15 @@ function reducer(state,action){
         }
         case "cartDelete":return{
             ...state,cart:action.paylode
+        }
+        case "producData":return{
+            ...state,productData:action.paylode
+        }
+        case "lodingtrue":return{
+            ...state,isloding:true 
+        }
+        case "lodingfalse":return{
+            ...state,isloding:false
         }
         default :return state
     }

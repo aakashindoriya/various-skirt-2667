@@ -30,7 +30,7 @@ function NavUp(){
                       <Spacer />
                       <Flex alignItems={"center"}>
                       <Icon as={TiHeartHalfOutline} w={10} h={10}></Icon>
-                      <Text>Sign in</Text>
+                      <Text>Fav</Text>
                       </Flex >
                      
                       <Spacer />

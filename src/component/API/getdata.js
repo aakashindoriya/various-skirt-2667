@@ -9,3 +9,7 @@ export function Setuser(data){
 export function Loginuser(){
    return axios.get("http://localhost:3000/users")
 }
+export function Getdatabyid(id){
+   console.log(id)
+   return axios.get(`https://fakestoreapi.com/products/${id}`)
+}
