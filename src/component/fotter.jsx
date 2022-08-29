@@ -1,4 +1,8 @@
-import fotter from "./footer.png"
+
+import fotter from "../photo/footer.png"
+
+
+
 function FooterP(){
     console.log("i am in footer")
     return (
