@@ -16,24 +16,7 @@
   "profile": {
     "name": "typicode"
   },
-  "users": [
-    {
-      "email": "aaksjh",
-      "password": "aaksjh",
-      "name": "aaksjh",
-      "id": 1
-    },
-    {
-      "email": "aakash@123",
-      "password": "aakash@123",
-      "name": "aakash",
-      "id": 2
-    },
-    {
-      "email": "aakash@321",
-      "password": "aakash@321",
-      "name": "aakash",
-      "id": 3
-    }
-  ]
+  "users": []
+    
+
 }
