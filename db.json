@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "email": "aaksjh",
+      "password": "aaksjh",
+      "name": "aaksjh",
+      "id": 1
+    },
+    {
+      "email": "aakash@123",
+      "password": "aakash@123",
+      "name": "aakash",
+      "id": 2
+    },
+    {
+      "email": "aakash@321",
+      "password": "aakash@321",
+      "name": "aakash",
+      "id": 3
+    }
+  ]
+}
